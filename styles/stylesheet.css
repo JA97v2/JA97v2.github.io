@@ -27,34 +27,75 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+/* Style for mobile view */
 .header-section {
     margin: auto;
-    width: 80%;
+    width: 100%;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .header-section {
+        margin: auto;
+        width: 80%;
+    }
 }
 .nav-bar {
     display: flex;
     align-items: center;
 }
+/* Style for mobile view */
 .logo-img {
-    height: 80px;
-    padding: 10px 20px 10px;
+    height: 50px;
+    padding: 5px 10px 5px;
 }
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .logo-img {
+        height: 80px;
+        padding: 10px 20px 10px;
+    }
+}
+/* Style for mobile view */
 .social-links {
     width: 100%;
-    padding: 0px 20px 0px;
+    padding: 0px 10px 0px;
     text-align: end;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .social-links {
+        width: 100%;
+        padding: 0px 20px 0px;
+        text-align: end;
+    }
 }
 .social-links > a:hover {
     text-decoration: none !important;
     background-color: rgba(255, 255, 255, 0) !important;
 }
+/* Style for mobile view */
 .social-links > a > img {
-    height: 40px;
-    padding: 2px 2px 2px;
+    height: 30px;
+    padding: 1px 1px 1px;
 }
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .social-links > a > img {
+        height: 40px;
+        padding: 2px 2px 2px;
+    }
+}
+/* Style for mobile view */
 .social-links > a > img:hover {
-    height: 50px;
-    padding: 2px 2px 2px;
+    height: 40px;
+    padding: 1px 1px 1px;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .social-links > a > img:hover {
+        height: 50px;
+        padding: 2px 2px 2px;
+    }
 }
 hr {
     border: 0;
@@ -64,86 +105,215 @@ hr {
     height: 1px;
     margin-top: 0px;
 }
+/* Style for mobile view */
 .section-title {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 25px;
 }
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .section-title {
+        text-align: center;
+        margin-top: 25px;
+    }
+}
+/* Style for mobile view */
 .first-section {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 50px 10px;
+    padding: 5px 25px 5px;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 300px;
+    height: 150px;
     /* Animations */
     animation: fadeIn ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-.first-section > div > p {
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .first-section {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 50px 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 300px;
+        /* Animations */
+        animation: fadeIn ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+
+/* Style for mobile view */
+.first-section > div > h2 {
     font-size: 22px;
 }
-.first-section > img {
-    height: 300px;
-    /*padding: 10px 80px 10px 0px;*/
+.first-section > div > p {
+    font-size: 15px;
 }
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .first-section > div > h2 {
+        font-size: 30px;
+    }
+    .first-section > div > p {
+        font-size: 22px;
+    }
+}
+/* Style for mobile view */
+.first-section > img {
+    height: 150px;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .first-section > img {
+        height: 300px;
+    }
+}
+/* Style for mobile view */
 .second-section {
     margin: auto;
-    width: 73%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 30px 20px 20px;
+    padding: 15px 10px 10px;
     /* Animation */
     animation: fadeIn ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .second-section {
+        margin: auto;
+        width: 73%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 20px 20px;
+        /* Animation */
+        animation: fadeIn ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+/* Style for mobile view */
 .service-card {
-    width: 30%;
+    width: 100%;
+}
+.service-card > h3 {
+    font-size: 22px;
 }
 .service-card > img {
-    height: 40px;
-    margin-bottom: 20px;
+    height: 30px;
+    margin-bottom: 10px;
 }
 .service-card > p {
-    font-size: 20px;
+    font-size: 12px;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .service-card {
+        width: 30%;
+    }
+    .service-card > h3 {
+        font-size: 30px;
+    }
+    .service-card > img {
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .service-card > p {
+        font-size: 20px;
+    }
 }
 /*---------------------------------------------------------------*/
 /* Habilidades.html style */
 /*---------------------------------------------------------------*/
+/* Style for mobile view */
 .third-section {
     margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 30px 0px 20px;
-    height: 520px;
+    padding: 15px 0px 10px;
+    height: 1024px;
     /* Animations */
     animation: fadeIn ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .third-section {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 0px 20px;
+        height: 520px;
+        /* Animations */
+        animation: fadeIn ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+}
+/* Style for mobile view */
 .skills-group-container {
-    padding: 10px 30px 10px;
-    width: 33%;
+    padding: 5px 15px 5px;
+    width: 100%;
 }
 .skills-group-container > h3 {
     text-align: center;
+    font-size: 22px;
 }
 .skill-container {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     margin-bottom: 5px;
+}
+.skill-container > h5 {
+    font-size: 15px;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .skills-group-container {
+        padding: 10px 30px 10px;
+        width: 33%;
+    }
+    .skills-group-container > h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .skill-container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-bottom: 5px;
+    }
+    .skill-container > h5 {
+        font-size: 22px;
+    }
 }
 /*---------------------------------------------------------------*/
 /* Experiencia.html style */
 /*---------------------------------------------------------------*/
+/* Style for mobile view */
+.section-title {
+    font-size: 25px;
+}
 .fourth-section {
     margin: auto;
-    width: 80%;
-    padding: 30px 20px 20px;
+    width: 100%;
+    padding: 15px 10px 10px;
     /* Animations */
     animation: fadeIn ease 2s;
     animation-iteration-count: 1;
@@ -151,11 +321,46 @@ hr {
 }
 .exp-section {
     display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 5px 20px 5px;
+    grid-template-columns: 30% 70%;
+    padding: 2px 5px 2px;
+}
+.exp-section > div > h3 {
+    font-size: 18px;
+}
+.exp-section > div > h4 {
+    font-size: 15px;
 }
 .exp-section > ul {
-    font-size: 20px;
+    font-size: 14px;
+}
+/* Style for desktop view */
+@media (min-width: 600px) {
+    .section-title {
+        font-size: 36px;
+    }
+    .fourth-section {
+        margin: auto;
+        width: 80%;
+        padding: 30px 20px 20px;
+        /* Animations */
+        animation: fadeIn ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .exp-section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5px 20px 5px;
+    }
+    .exp-section > h3 {
+        font-size: 30px;
+    }
+    .exp-section > h4 {
+        font-size: 25px;
+    }
+    .exp-section > ul {
+        font-size: 20px;
+    }
 }
 /*---------------------------------------------------------------*/
 /* nav-bar buttons style */
