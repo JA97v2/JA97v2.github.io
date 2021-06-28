@@ -152,7 +152,7 @@ hr {
 
 /* Style for mobile view */
 .first-section > div > h2 {
-    font-size: 22px;
+    font-size: 18px;
 }
 .first-section > div > p {
     font-size: 15px;
@@ -168,7 +168,7 @@ hr {
 }
 /* Style for mobile view */
 .first-section > img {
-    height: 150px;
+    height: 100px;
 }
 /* Style for desktop view */
 @media (min-width: 600px) {
